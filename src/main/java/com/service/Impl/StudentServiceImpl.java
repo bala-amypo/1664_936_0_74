@@ -7,9 +7,9 @@ import com.example.demo.service.StudentService;
 @service
 public class StudentServiceImpl implements StudentService{
 @Autowired StudentRepository student;
-//save()
-//findAll()
-//findbyId()
+//save();
+//findAll();
+//findbyId();
 //deletebyId();
 //existsById();
 
