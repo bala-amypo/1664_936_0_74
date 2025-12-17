@@ -7,4 +7,10 @@ import com.example.demo.service.StudentService;
 @RestController
 public class Studentcontroller{
 @Autowired StudentService ser;
+
+@postMapping("/post")
+public studentEntity senddata(@RequetBody studentEntity stu){
+    
+}
+
 }
