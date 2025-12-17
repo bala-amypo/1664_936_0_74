@@ -11,7 +11,21 @@ private string password;
 private Dtat created;
 
 }
-public Data getcreated (){
-    return name
+public Data getcreated(){
+    return created;
 }
-public string 
+public void setcreated(Data created){
+    this.created
+}
+public Integer getId(){
+    retrun id;
+}
+public void setId(integer id){
+    this.id = id;
+}
+public string getname(){
+    retrun name;
+}
+public void setname(string name){
+   this.name
+}
