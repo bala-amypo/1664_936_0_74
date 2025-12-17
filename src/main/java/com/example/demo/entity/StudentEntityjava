@@ -27,5 +27,20 @@ public string getname(){
     retrun name;
 }
 public void setname(string name){
-   this.name
+   this.name = name;
 }
+public string getEmail(){
+    retrun email;
+}
+public void setEmail(string Email){
+    this.email = Email
+}
+public string getpassword(){
+    retrun password;
+}
+public void setPassword(string password){
+    this.password = password;
+}
+
+public SampleEntity(Inter id, string name, string email, string password, Data created)
+
