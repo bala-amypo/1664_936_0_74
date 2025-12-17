@@ -7,7 +7,15 @@ import com.example.demo.service.StudentService;
 @service
 
 public class StudentServiceImpl implements StudentService{
+@Autowired StudentRepository student;
+//save
+//findAll()
+//findbyId()
+//deletebyId()
+//exists
 
-   public StudentEntity postData(StudentEntity stu);
+   public StudentEntity postData(StudentEntity stu){
+
+   }
 
 }
