@@ -8,14 +8,15 @@ import com.example.demo.service.StudentService;
 
 public class StudentServiceImpl implements StudentService{
 @Autowired StudentRepository student;
-//save
+//save()
 //findAll()
 //findbyId()
-//deletebyId()
-//exists
+//deletebyId();
+//existsById();
 
    public StudentEntity postData(StudentEntity stu){
-
+   return student.save(stu);
+   
    }
 
 }
