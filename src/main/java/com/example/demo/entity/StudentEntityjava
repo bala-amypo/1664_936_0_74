@@ -11,5 +11,5 @@ private string email;
 private string password;
 private Dtat created;
 
-getsetter
 }
+public string 
