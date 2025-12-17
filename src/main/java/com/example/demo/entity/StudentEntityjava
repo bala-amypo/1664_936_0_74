@@ -12,9 +12,9 @@ public class Studententity{
     @id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 private integer id;
-private string name;
-private string email;
-private string password;
+private String name;
+private String email;
+private String password;
 private Dtat created;
 
 }
@@ -30,33 +30,34 @@ public Integer getId(){
 public void setId(integer id){
     this.id = id;
 }
-public string getname(){
+public String getname(){
     retrun name;
 }
 public void setname(string name){
    this.name = name;
 }
-public string getEmail(){
+public String getEmail(){
     retrun email;
 }
 public void setEmail(string Email){
     this.email = Email
 }
-public string getpassword(){
+public String getpassword(){
     retrun password;
 }
 public void setPassword(string password){
     this.password = password;
 }
 
-public SampleEntity(Inter id, string name, string email, string password, Data created){
+public SampleEntity(Inter id, String name, String email, String password, Data created){
 this.id = id;
-this.name = name
-this.email = email
-this.password = password
+this.name = name;
+this.email = email;
+this.password = password;
+this.created = created;
 }
 
 Public StudentEntity(){
-    
+
 }
 
