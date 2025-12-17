@@ -18,8 +18,7 @@ public studentEntity sendData(@RequetBody studentEntity stu){
 
 }
 
-package com.example.demo.controller;
-
+package
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
