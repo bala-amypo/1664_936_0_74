@@ -4,12 +4,14 @@ import java.sql.Data;
 
 @Entity
 public class Studententity{
-
-private string name;
 private integer id;
+private string name;
 private string email;
 private string password;
 private Dtat created;
 
+}
+public Data getcreated (){
+    return name
 }
 public string 
