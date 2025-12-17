@@ -5,7 +5,6 @@ import org.springframework.stereotype.service;
 import com.example.demo.service.StudentService;
 
 @service
-
 public class StudentServiceImpl implements StudentService{
 @Autowired StudentRepository student;
 //save()
@@ -15,7 +14,6 @@ public class StudentServiceImpl implements StudentService{
 //existsById();
 
 @override
-
    public StudentEntity postData(StudentEntity stu){
    return student.save(stu);
 
