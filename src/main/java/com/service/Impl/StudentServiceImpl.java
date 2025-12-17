@@ -6,14 +6,14 @@ import com.example.demo.service.StudentService;
 
 @Service
 public class StudentServiceImpl implements StudentService{
-@Autowired StudentRepository student;
+@Autowired StudentRepository student
 //save();
 //findAll();
 //findbyId();
 //deletebyId();
 //existsById();
 
-@override
+@Override
    public StudentEntity postData(StudentEntity stu){
    return student.save(stu);
 
