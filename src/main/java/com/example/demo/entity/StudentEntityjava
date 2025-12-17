@@ -2,8 +2,14 @@ package com.example.demo.entity
 
 import java.sql.Data;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
 @Entity
 public class Studententity{
+    @id
+    @GeneratedValue(strategy=GeneratedValue)
 private integer id;
 private string name;
 private string email;
@@ -43,4 +49,10 @@ public void setPassword(string password){
 }
 
 public SampleEntity(Inter id, string name, string email, string password, Data created)
+
+ this.id = id;
+this.name = name
+this.email = email
+private string password
+private Dtat created;
 
