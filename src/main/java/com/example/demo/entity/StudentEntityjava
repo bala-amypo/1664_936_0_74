@@ -1,11 +1,15 @@
 package com.example.demo.entity
 
-@entity
+import java.sql.Data;
+
+@Entity
 public class Studententity{
+
 private string name;
 private integer id;
 private string email;
 private string password;
 private Dtat created;
 
+getsetter
 }
