@@ -30,10 +30,10 @@ public class ValidationEntity{
     @Positive(message="age could not be negative")
     private int age;
       
-    public String getUserName(){
+    public String getUsername(){
         return username;
     }
-    public void setUserName(){
+    public void setUsername(){
         this.username=username;
     }
 
