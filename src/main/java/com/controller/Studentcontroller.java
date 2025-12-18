@@ -26,7 +26,7 @@ public List<StudentEntity>getVal(){
 }
 @DeleteMapping("/delete/{id}")
 public String deleteVal(@PathVariable int id){
-   return ser.DeleteData(Id);
+   return ser.DeleteData(id);
 }
 }
 
