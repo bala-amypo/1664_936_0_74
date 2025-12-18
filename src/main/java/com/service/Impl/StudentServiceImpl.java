@@ -9,11 +9,11 @@ import com.example.demo.repository.StudentRepository;
 @Service
 public class StudentServiceImpl implements StudentService{
 @Autowired StudentRepository student;
-//save();
-//findAll();
-//findbyId();
-//deletebyId();
-//existsById();
+//save()
+//findAll()
+//findbyId()
+//deletebyId()
+//existsById()
 
 @Override
    public StudentEntity postData(StudentEntity stu){

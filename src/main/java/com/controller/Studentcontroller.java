@@ -12,8 +12,8 @@ public class Studentcontroller{
 @Autowired StudentService ser;
 
 @postMapping("/post")
-public studentEntity sendData(@RequestBody studentEntity stu){
-  return ser.postdata(stu);
+public StudentEntity sendData(@RequestBody StudentEntity stu){
+  return ser.postData(stu);
 }
 
 }
