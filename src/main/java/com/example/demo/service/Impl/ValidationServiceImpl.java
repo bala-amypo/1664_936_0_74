@@ -9,8 +9,8 @@ import java.util.List;
 
 
 @Service
-public class ValidationServiceImpl implements ValidationServiceImpl{
-@Autowired StudentRepository student;
+public class ValidationServiceImpl implements ValidationService{
+@Autowired ValidationRepository student;
 //save()
 //findAll()
 //findbyId()
@@ -18,7 +18,7 @@ public class ValidationServiceImpl implements ValidationServiceImpl{
 //existsById()
 
 @Override
-   public StudentEntity postData(StudentEntity stu){
+   public ValidationEntity postData(ValidationEntity stu){
    return student.save(stu);
 
    }
