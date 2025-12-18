@@ -11,11 +11,7 @@ import java.util.List;
 @Service
 public class ValidationServiceImpl implements ValidationService{
 @Autowired ValidationRepository student;
-//save()
-//findAll()
-//findbyId()
-//deletebyId()
-//existsById()
+
 
 @Override
    public ValidationEntity postData(ValidationEntity stu){

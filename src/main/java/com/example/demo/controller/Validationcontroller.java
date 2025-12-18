@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
-import jakarta.Validation.Valid;
+import jakarta.validation.Valid;
+
 @RestController
 public class Validationcontroller{
-
 @Autowired ValidationService ser;
 
 @PostMapping("/validpost")
