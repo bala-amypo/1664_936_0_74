@@ -1,4 +1,5 @@
 package com.example.demo.entity;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
@@ -10,13 +11,17 @@ import jakarata,.validation.constraints.Size;
 public class ValidationEntity{
     @id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
- private Long id;
- @NotNull
- @size(min = 2, max = 0, message = "must be to 10 character")
+    private Long id;
+    @NotNull
+    @size(min = 2, max = 0, message = "must be to 10 character")
     private String username;
-    @Email
+    @Email(message = "Email is not valid")
     private String email;
+    @Max(6)
+    @NotNull(message = "Password is mandatory")
     private String password;
+    @Max(30)
+
     private int age;
 
 }
