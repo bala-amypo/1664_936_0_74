@@ -15,7 +15,8 @@ import jakarta.validation.constraints.Positive;
 
 
 public class ValidationEntity{
-
+@Id
+@GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     @NotNull
     @Size(min=2,max=6,message="require 2 to 6 characters")
@@ -25,21 +26,22 @@ public class ValidationEntity{
     @Size(min=2,max=6,message="should be less than 6")
     @NotNull
     private String Password;
-    @Max(message="age should be less than 35")
+    @Max
+
     @Positive(message="age could not be negative")
     private int age;
       
-    public String getName(){
-        return name;
+    public String getuserName(){
+        return username;
     }
-    public void setName(String name){
-        this.name=name;
+    public void setuserName(String name){
+        this.username=username;
     }
 
-    public Integer getId(){
+    public Long getId(){
         return id;
     }
-    public void setId(Integer id){
+    public void setId(Long id){
         this.id=id;
     }
 
@@ -64,11 +66,6 @@ public class ValidationEntity{
         this.age=age;
     }
 
-    public ValidationEntity(){
-
-
-
-    }
      
     public ValidationEntity(  Long id,
     @NotNull
