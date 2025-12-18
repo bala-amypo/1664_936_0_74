@@ -23,11 +23,10 @@ public class StudentEntity{
 public String getName(){
     return name;
 }
-public void setName(String name){
-    this.name=name;
+name;
 }
 
-public Integer getId(){
+public 
     return id;
 }
 public void setId(Integer id){
