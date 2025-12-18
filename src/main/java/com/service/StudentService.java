@@ -6,6 +6,7 @@ public interface StudentService{
   StudentEntity postData(StudentEntity stu);
 
 
+
 }
 
 
