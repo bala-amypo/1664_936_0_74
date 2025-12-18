@@ -22,6 +22,7 @@ public StudentEntity postval(@RequestBody StudentEntity entity){
 public List<StudentEntity>getVal(){
   return ser.getAllData();
 }
-
+@DeleteMapping("/delete/{id}")
+public String de
 }
 
