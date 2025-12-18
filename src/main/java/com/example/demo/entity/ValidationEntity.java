@@ -25,15 +25,15 @@ public class ValidationEntity{
     private String email;
     @Size(min=2,max=6,message="should be less than 6")
     @NotNull
-    private String Password;
-    @Max
+    private String password;
+    @Max(30)
     @Positive(message="age could not be negative")
     private int age;
       
-    public String getuserName(){
+    public String getUserName(){
         return username;
     }
-    public void setuserName(String name){
+    public void setUserName(){
         this.username=username;
     }
 
@@ -51,10 +51,10 @@ public class ValidationEntity{
         this.email=email;
     }
 
-    public String getPassword(){
+    public String getpassword(){
         return password;
     }
-    public void setPassword(String password){
+    public void setpassword(String password){
         this.password=password;
     }
 
@@ -74,8 +74,6 @@ public class ValidationEntity{
      String email,
     @Size(min=2,max=6,message="should be less than 6")
     @NotNull
-     String Password,
-    @Max(message="age should be less than 35")
     @Positive(message="age could not be negative")
      int age){
        this.id=id;
