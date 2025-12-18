@@ -28,5 +28,10 @@ public List<StudentEntity>getVal(){
 public String deleteVal(@PathVariable int id){
    return ser.DeleteData(id);
 }
+@GetMapping("/getid/{id}")
+public StudentEntity getdataid(@PathVariable int id){
+return ser.getData(id);
 }
+}
+
 
