@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 
 @RestController
-public class Studentcontroller{
+public class Validationcontroller{
 
 @Autowired Validationservice ser;
 
 @PostMapping("/post")
-public StudentEntity postval(@RequestBody StudentEntity entity){
+public ValidationEntity postval(@RequestBody ValidationEntity entity){
   return ser.postData(entity);
 }
 
