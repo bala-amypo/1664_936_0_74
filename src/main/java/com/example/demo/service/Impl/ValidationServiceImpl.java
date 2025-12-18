@@ -9,7 +9,7 @@ import java.util.List;
 
 
 @Service
-public class ValidationServiceImpl implements ValidationService{
+public class ValidationServiceImpl implements ValidationStudentService{
 @Autowired ValidationRepository student;
 
 

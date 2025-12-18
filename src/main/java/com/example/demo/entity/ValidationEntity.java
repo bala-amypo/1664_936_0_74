@@ -78,7 +78,7 @@ public class ValidationEntity{
     @Positive(message="age could not be negative")
      int age){
        this.id=id;
-        this.name=name;
+        this.username=username;
         this.email=email;
         this.password=password;
         this.age=age;
