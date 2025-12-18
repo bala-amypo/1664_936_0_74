@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface ValidationService{
   ValidationEntity postData(ValidationEntity stu);
-List<StudentEntity>getAllData();
+List<ValidationStudentEntity>getAllData();
 String DeleteData(int id);
 ValidationEntity getData(int id);
 ValidationEntity updateData(int id,ValidationEntity entity);

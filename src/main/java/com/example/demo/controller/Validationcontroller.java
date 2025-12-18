@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 public class Validationcontroller{
 
-@Autowired Validationservice ser;
+@Autowired ValidationService ser;
 
 @PostMapping("/validpost")
 public ValidationEntity postval(@RequestBody ValidationEntity entity){
