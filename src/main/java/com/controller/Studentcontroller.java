@@ -14,12 +14,12 @@ public class Studentcontroller{
 @Autowired StudentService ser;
 
 @postMapping("/post")
-public StudentEntity sendData(@RequestBody StudentEntity stu){
-  return ser.postData(stu);
+public StudentEntity postval(@RequestBody StudentEntity entity){
+  return ser.postData(entity);
 }
 @GetMapping("/get")
 public List<StudentEntity>getVal(){
-  return service.getAllData();
+  return ser.getAllData();
 }
 
 }
