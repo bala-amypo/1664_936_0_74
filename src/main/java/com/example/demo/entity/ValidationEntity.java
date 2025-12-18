@@ -24,7 +24,7 @@ public class ValidationEntity{
     private String email;
     @Size(min=2,max=6,message="should be less than 6")
     @NotNull
-    private String password;
+    private String Password;
     @Max(message="age should be less than 35")
     @Positive(message="age could not be negative")
     private int age;
@@ -36,10 +36,10 @@ public class ValidationEntity{
         this.name=name;
     }
 
-    public Integer getID(){
+    public Integer getId(){
         return id;
     }
-    public void setID(Integer id){
+    public void setId(Integer id){
         this.id=id;
     }
 
@@ -78,7 +78,7 @@ public class ValidationEntity{
      String email,
     @Size(min=2,max=6,message="should be less than 6")
     @NotNull
-     String password,
+     String Password,
     @Max(message="age should be less than 35")
     @Positive(message="age could not be negative")
      int age){
