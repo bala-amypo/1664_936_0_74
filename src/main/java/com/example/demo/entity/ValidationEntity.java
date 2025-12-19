@@ -12,6 +12,7 @@ import jakarta.validation.constraints.Positive;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.AllArgsConstructor;
 
 @Entity
 @Data
