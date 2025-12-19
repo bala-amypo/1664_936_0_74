@@ -10,17 +10,17 @@ import com.example.demo.exception.ValidationException;
 
 @Service
 public class ValidationServiceImpl implements ValidationStudentService{
-@Autowired ValidationRepository student;
+@Autowired ValidationRepository student1;
 
 
 @Override
    public ValidationEntity postData(ValidationEntity stu){
-   return student.save(stu);
+   return student1.save(stu);
 
    }
 @Override
 public ValidationEntity getStudentById(Long id){
-   return student.findById(id).orElseThrow(()->new ValidationException("Invalid Id"+id));
+   return student1.findById(id).orElseThrow(()->new ValidationException("Invalid Id"+id));
 
 }
 
