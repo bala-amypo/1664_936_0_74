@@ -16,7 +16,6 @@ public class ValidationServiceImpl implements ValidationStudentService{
 @Override
    public ValidationEntity postData(ValidationEntity stu){
    return student1.save(stu);
-
    }
 @Override
 public ValidationEntity getStudentById(Long id){
