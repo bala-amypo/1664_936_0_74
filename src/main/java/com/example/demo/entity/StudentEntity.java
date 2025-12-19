@@ -24,3 +24,8 @@ public class StudentEntity{
     private Date created;
 
 }
+
+
+
+@OneToOne
+@JoinColumn(name = "")
