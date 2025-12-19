@@ -11,7 +11,7 @@ import lombok.AllArgsConstructor;
 import java.time.LocalDateTime;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import lombok.NoAgrsConstructor;
+import lombok.NoArgsConstructor;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 
@@ -19,8 +19,8 @@ import jakarta.persistence.PreUpdate;
 @Data
 @Getter
 @Setter
-@AllAgrsConstructor
-@NoAgrsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class TimeStampEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -32,7 +32,7 @@ public class TimeStampEntity{
 
     @PrePersist
     public void Oncreate(){
-        LocalDateTime now=LocalDataTime.now();
+        LocalDateTime now=LocalDateTime.now();
         if (this.createdAt==null){
         this.createdAt = now;
      }
