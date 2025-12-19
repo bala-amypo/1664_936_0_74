@@ -6,7 +6,7 @@ import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationStudentService;
 import com.example.demo.repository.ValidationRepository;
 import java.util.List;
-
+import com.example.demo.exception.ValidationException;
 
 @Service
 public class ValidationServiceImpl implements ValidationStudentService{
