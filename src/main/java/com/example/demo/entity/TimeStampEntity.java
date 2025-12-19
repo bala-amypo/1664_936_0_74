@@ -11,7 +11,9 @@ import lombok.AllArgsConstructor;
 import java.time.LocalDateTime;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import lombok.NoA
+import lombok.NoAgrsConstructor;
+import jakarta.persistence.PerPersist;
+
 @Entity
 @Data
 @Getter
