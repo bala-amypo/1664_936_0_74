@@ -18,7 +18,7 @@ import jakarta.persistence.JoinCloumn;
 @NoAgrsConstructor
 public class StudentIdCard{
     @Id
-    @Gene
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
 
 @OneToOne
 @JoinColumn(name = "student_id")
