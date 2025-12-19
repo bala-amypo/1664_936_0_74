@@ -2,15 +2,20 @@ package com.example.demo.entity;
 
 import jakarta.validation.constraints.*;
 import jakata.persistence.*;
-import lombok.*;
 import java.util.*;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.AllArgsConstructor;
+import java.time.LocalDateTime;
+
 @Entity
 @Data
 @Getter
 @Setter
 @AllAgrsConstructor
 @NoAgrsConstructor
-public class TimeSampEntity{
+public class TimeStampEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY);
     private Long id;
