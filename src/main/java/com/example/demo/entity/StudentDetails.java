@@ -1,7 +1,7 @@
 package com.example.demo.entity;
 
 
-@one to one
+@oneToOne
 public class StudentDetailsEntity{
 
 
