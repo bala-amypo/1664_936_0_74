@@ -15,9 +15,9 @@ public class TimeStampEntity{
     private Long id;
     private String username;
     private String email;
-
-
-
+    Private LocalDateTime createAt;
+    private LocalDateTime updateAt;
+     
 
 
 }
