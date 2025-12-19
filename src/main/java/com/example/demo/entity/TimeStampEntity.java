@@ -27,5 +27,9 @@ public class TimeStampEntity{
     private LocalDateTime updatedAt;
 
     @PerPersist
-    public void 
+    public void Oncreate(){
+        LocalDateTime noe = new LocalDataTime();
+        this.createdAt = now;
+        this.updatedAt = now;
+    }
 }
