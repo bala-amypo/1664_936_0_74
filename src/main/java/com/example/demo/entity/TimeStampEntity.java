@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
 import java.time.LocalDateTime;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 @Data
