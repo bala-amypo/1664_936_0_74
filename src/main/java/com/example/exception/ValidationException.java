@@ -6,7 +6,7 @@ public class ValidationExepction extends RuntimeExcpetion{
 
 
 
-    public ValidationException(String message){
+    public ValidationExepction(String message){
         super(message);
     }
       
