@@ -12,8 +12,8 @@ import java.time.LocalDateTime;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import lombok.NoAgrsConstructor;
-import jakarta.persistence.PerPersist;
-import jakarta.persistence.PerUpdate;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 
 @Entity
 @Data
@@ -30,13 +30,13 @@ public class TimeStampEntity{
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    @PerPersist
+    @PrePersist
     public void Oncreate(){
         LocalDateTime now=LocalDataTime.now();
         this.createdAt = now;
         this.updatedAt = now;
     }
-@PerUpdate
+@PreUpdate
 public void Onupdate(){
 LocalDateTime now=LocalDateTime.now();
     this.updatedAt = now;
