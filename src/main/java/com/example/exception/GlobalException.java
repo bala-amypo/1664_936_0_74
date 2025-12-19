@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 public class GlobalException{
 
 @ExceptionHandler(ValidationException.class)
-public ResponseEntiy<String> HandleValidationExecption(ValidationException ex){
+public ResponseEntity<String> HandleValidationExecption(ValidationException ex){
 return new ResponseEntity<String>(ex.getMessage(),HttpStatus.BAD_GATEWAY);
 
 
