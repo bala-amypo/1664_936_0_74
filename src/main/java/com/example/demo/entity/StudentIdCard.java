@@ -1,28 +1,27 @@
 package com.example.demo.entity;
 
-import jakarta.validation.constraints.*;
-import jakarta.persistence.*;
+import java.util.Date;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import java.util.*;
-import lombok.Data;
-import lombok.AllArgsConstructor;
-import java.time.LocalDateTime;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import lombok.NoAgrsConstructor;
 import jakarta.persistence.OneToOne;
-import jakarta.persistence.JoinCloumn;
+import jakarta.persistence.JoinColumn;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Data;
+import lombok.Setter;
+import lombok.Getter;
 @Entity
 @Data
-@AllAgrsConstructor
-@NoAgrsConstructor
-public class StudentIdCard{
+@AllArgsConstructor
+@NoArgsConstructor
+public class StudentIdDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-
-@OneToOne
-@JoinColumn(name = "student_id")
-private Studentdetails student;
-
-
+    private Integer id;
+    private int id_no;
+    @OneToOne
+    private StudentDetailsEntity student;
 }
+
