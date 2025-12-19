@@ -15,8 +15,7 @@ public class TimeStampEntity{
     private Long id;
     private String username;
     private String email;
-    private String password;
-    private Date created;
+
 
 
 
