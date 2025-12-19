@@ -38,6 +38,8 @@ public class TimeStampEntity{
     }
 @PerUpdate
 public void Onupdate(){
+LocalDateTime now=LocalDateTime.now();
     this.updatedAt = now;
 }
+
 }
