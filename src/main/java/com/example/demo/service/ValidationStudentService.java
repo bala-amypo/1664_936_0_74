@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface ValidationStudentService{
   ValidationEntity postData(ValidationEntity stu);
-
+ValidationEntity getStudentById(Long id);
 }
 
 
