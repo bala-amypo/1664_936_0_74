@@ -25,7 +25,9 @@ public class StudentEntity{
 
 }
 
-
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinCloumn;
 
 @OneToOne
-@JoinColumn(name = "")
+@JoinColumn(name = "student_id")
+private Studentdetails student;
