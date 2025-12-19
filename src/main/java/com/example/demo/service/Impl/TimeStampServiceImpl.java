@@ -9,8 +9,8 @@ import java.util.List;
 import com.example.demo.exception.ValidationException;
 
 @Service
-public class TimeStampServiceImpl implements TimeStampStudentService{
-@Autowired ValidationRepository student1;
+public class TimeStampServiceImpl implements TimeStampService{
+@Autowired TimeStampRepository student1;
 
 
 @Override
