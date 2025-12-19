@@ -13,6 +13,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import lombok.NoAgrsConstructor;
 import jakarta.persistence.PerPersist;
+import jakarta.persistence.PerUpdate;
 
 @Entity
 @Data
