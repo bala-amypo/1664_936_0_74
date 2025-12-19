@@ -4,10 +4,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.entity.ValidationEntity;
+import com.example.demo.entity.TimeStampEntity;
 
 @Repository
-public interface TimeStampRepository extends JpaRepository<Entity,Long>{
+public interface TimeStampRepository extends JpaRepository<TimeStampEntity,Long>{
 
 }
 
