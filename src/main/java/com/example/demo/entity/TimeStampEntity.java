@@ -2,6 +2,7 @@ package com.example.demo.entity;
 
 import jakarta.validation.constraints.*;
 import jakarta.persistence.*;
+import jakarta.persistence.Id;
 import java.util.*;
 import lombok.Data;
 import lombok.Getter;
