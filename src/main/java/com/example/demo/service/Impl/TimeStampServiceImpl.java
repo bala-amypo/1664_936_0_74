@@ -1,7 +1,27 @@
-package com.example.demo.Impl;
+package com.example.demo.service.Impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.example.demo.entity.ValidationEntity;
+import com.example.demo.service.ValidationStudentService;
+import com.example.demo.repository.ValidationRepository;
+import java.util.List;
+import com.example.demo.exception.ValidationException;
+
+@Service
+public class ValidationServiceImpl implements ValidationStudentService{
+@Autowired ValidationRepository student1;
 
 
-public class TimeStampServiceImpl{
+@Override
+   public TimeStampEntity postData(TimeStampEntity stu){
+   return student1.save(stu);
+   }
+@Override
+public TimeStampEntity getStudentById(Long id){
+   return student1.findById(id).orElseThrow(()->new ValidationException("Invalid Id"+id));
 
-    
 }
+
+}
+
