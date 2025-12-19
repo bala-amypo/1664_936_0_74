@@ -16,12 +16,12 @@ import lombok.Getter;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentIdDetails{
+public class StudentIdCard{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private int id_no;
     @OneToOne
-    private StudentDetailsEntity student;
+    private StudentDetails student;
 }
 
