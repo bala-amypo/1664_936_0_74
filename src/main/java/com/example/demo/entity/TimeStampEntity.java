@@ -28,8 +28,12 @@ public class TimeStampEntity{
 
     @PerPersist
     public void Oncreate(){
-        LocalDateTime noe = new LocalDataTime();
+        LocalDateTime noe = LocalDataTime().now();
         this.createdAt = now;
         this.updatedAt = now;
     }
+@PerUpdate
+public void Onupdate(){
+    this.updatedAt = now;
+}
 }
