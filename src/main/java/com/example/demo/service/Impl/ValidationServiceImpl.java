@@ -18,7 +18,11 @@ public class ValidationServiceImpl implements ValidationStudentService{
    return student.save(stu);
 
    }
-@Overr
+@Override
+public ValidationEntity getStudentById(Integer id){
+   return repo.findById(id).orElse(other.Null);
+
+}
 
 
 
