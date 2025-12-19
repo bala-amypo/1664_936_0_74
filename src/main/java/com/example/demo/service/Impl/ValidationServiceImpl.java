@@ -24,8 +24,5 @@ public ValidationEntity getStudentById(Long id){
 
 }
 
-
-
-
 }
 
